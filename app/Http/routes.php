@@ -26,6 +26,15 @@ Route::get('/profile', function(){
 Route::get('/profile/edit', function(){
 	return view('edit');
 });
+//To display the dashboard
+/*Route::get('/', function(){
+	return view('Dashboard');
+});*/
+
+//Add a new player to the dashboard
+/*Route::get('', function(){
+	return view('');
+});*/
 
 Route::post('/profile/edit', ['uses'=>'EditController@editUser']);
 
